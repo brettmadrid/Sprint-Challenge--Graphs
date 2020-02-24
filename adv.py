@@ -26,10 +26,31 @@ world.print_rooms()
 player = Player(world.starting_room)
 
 # Fill this out with directions to walk
-# traversal_path = ['n', 'n']
+reverse_directions = {'n': 's', 's': 'n', 'e': 'w', 'w': 'e'}
 traversal_path = []
 
+def traverse(room, visited=None):
+    if visited is None:
+        visited = set()
+    
+    traversed_path = []
 
+    # add starting room to visited set
+
+        # move to that room and store in next_room variable
+
+        # if that room has not already been visited...
+
+            # recurse on that room to start the process again with that room
+
+            # after recursing through all rooms in that path
+            # if valid direction path, store that path 
+
+            # else, if not a valid path, reverse direction and store that 'reversed' direction path
+
+            # add path taken to traversed array
+
+    # return complete path to traversing the maze
 
 # TRAVERSAL TEST
 visited_rooms = set()
